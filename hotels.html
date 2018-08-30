@@ -24,8 +24,46 @@
     <main class="page-main">
       <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
       <section class="filters">
-        <h2 class="visually-hidden">Выбор параметров</h2>
-        <!-- FORM -->
+        <h2 class="visually-hidden">Выбор параметров отеля</h2>
+        <form class="form-search" action="http://echo.htmlacademy.ru/" method="get">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <input id="pool" class="visually-hidden" type="checkbox" name="pool" checked>
+            <label for="pool">Бассейн</label>
+
+            <input id="parking" class="visually-hidden" type="checkbox" name="parking">
+            <label for="parking">Парковка</label>
+
+            <input id="wifi" class="visually-hidden" type="checkbox" name="wifi">
+            <label for="wifi">Wi-Fi</label>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <input id="hotel" class="visually-hidden" type="checkbox" name="hotel" checked>
+            <label for="hotel">Гостиница</label>
+
+            <input id="motel" class="visually-hidden" type="checkbox" name="motel" checked>
+            <label for="motel">Мотель</label>
+
+            <input id="apartments" class="visually-hidden" type="checkbox" name="apartments" checked>
+            <label for="apartments">Апартаменты</label>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <div class="inputs-border">
+              <label for="cost-min">От</label>
+              <input id="cost-min" class="cost-min" type="text" name="mincost" value="0">
+
+              <label for="cost-max">До</label>
+              <input id="cost-max" class="cost-max" type="text" name="maxcost" value="3000">
+            </div>
+            <div class="range">
+              <div class="range-min"></div>
+              <div class="range-max"></div>
+            </div>
+            <button class="btn-search" type="submit">Показать</button>
+          </fieldset>
+        </form>
       </section>
       <section class="results-sorting">
         <h2 class="visually-hidden">Сортировка результатов</h2>
