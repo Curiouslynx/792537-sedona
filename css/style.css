@@ -15,6 +15,16 @@ body {
   color: #000000;
   background-color: #f2f2f2;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 a {
   text-decoration: none;
 }
@@ -26,6 +36,7 @@ a:active {
   color: #766357;
 }
 .wrapper {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -242,11 +253,13 @@ a:active {
 }
 .cost-min,
 .cost-max {
+  width: 50px;
   background-color: transparent;
   border: none;
   color: white;
 }
 .inputs-border {
+  width: 318px;
   border: 2px solid #ffffff;
   border-radius: 3px;
 }
@@ -395,4 +408,78 @@ a:active {
 }
 .rating-num {
   background-color: #f2f2f2;
+}
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.site-navigation {
+  display: flex;
+  justify-content: space-around;
+}
+.site-navigation>li:nth-child(2) {
+  margin-right: 20%;
+}
+.advantages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.intro {
+  width: 100%;
+}
+.reason-1,
+.reason-2,
+.reason-3,
+.reason-4,
+.reason-5 {
+  width: 33.333333%;
+}
+.reason-1-photo,
+.reason-1-photo {
+  width: 66.666666%;
+}
+.features {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.form-hotels {
+  position: absolute;
+  /*left: 415px;*/
+  left: 25%;
+  width: 570px;
+  background-color: #ffffff;
+}
+.page-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.index-footer {
+  position: absolute;
+  bottom: 0;
+  background-color:
+    rgba(255,255,255,0.85);
+}
+.form-search {
+  display: flex;
+  justify-content: space-around;
+}
+.form-search fieldset {
+  margin-left: 65px;
+}
+.form-search fieldset:last-of-type {
+  margin-left: auto;
+  margin-right: 65px;
+}
+.results-sorting,
+.sorting-type,
+.sorting-direction {
+  display: flex;
+}
+.result-item {
+  display: flex;
+  justify-content: space-around;
 }
