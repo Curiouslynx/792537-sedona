@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Седона</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <script>if(navigator.userAgent.indexOf("WebKit")!==-1)window.onfocus=function(){location.reload()}</script>
 </head>
 <body>
@@ -21,9 +24,9 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main index-main">
       <h1 class="visually-hidden">Седона - лучший город для туристов в Аризоне</h1>
-      <!-- ключевые слова в заголовке для SEO -->
+      <!-- ключевые слова обязательно должны быть в заголовке h1 для SEO -->
       <section class="welcome">
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
         <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
@@ -35,9 +38,9 @@
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <div class="reason-1">
-          <h3>Настоящий<br>городок</h3>
+          <h3>Настоящий <br> городок</h3>
           <span>&mdash; №1 &mdash;</span>
-          <p>Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
+          <p>Седона &mdash; не аттракцион для туристов, <br> там течёт своя жизнь</p>
         </div>
         <div class="reason-1-photo">
           <img src="img/reason-1-photo.jpg" width="800" height="256" alt="Ресторан Open Range Grill & Tavern">
@@ -82,17 +85,17 @@
       </section>
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-        <p>Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button" class="btn-hotels-popup">Поиск гостиницы в Седоне</button>
+        <p class="hotel-search-header">Заинтересовались?</p>
+        <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button type="button" class="btn btn-hotels-popup">Поиск гостиницы в Седоне</button>
         <form class="form-hotels" action="http://echo.htmlacademy.ru/" method="get">
           <p>
             <label for="arrival">Дата заезда</label>
-            <input id="arrival" class="date-arrival" type="text" name="arrival" value="" placeholder="24 АПРЕЛЯ 2017">
+            <input id="arrival" class="date-arrival" type="text" name="arrival" value="" placeholder="24 АПРЕЛЯ 2017" required>
           </p>
           <p>
             <label for="departure">Дата выезда</label>
-            <input id="departure" class="date-daparture" type="text" name="departure" value="" placeholder="4 ИЮЛЯ 2017">
+            <input id="departure" class="date-daparture" type="text" name="departure" value="" placeholder="4 ИЮЛЯ 2017" required>
           </p>
           <p>
             <label for="adults">Взрослые:</label>
@@ -104,11 +107,11 @@
             <input id="childrens" class="childrens-number" type="text" name="childrens" value="0">
             <button id="btn-childrens-more" class="btn-more" type="button">Больше</button>
           </p>
-          <button class="btn-search" type="submit">Найти</button>
+          <button class="btn btn-search-form" type="submit">Найти</button>
         </form>
       </section>
       <section class="map">
-        <h2 class="hotel-search-btn">Седона на карте</h2>
+        <h2 class="visually-hidden">Седона на карте</h2>
         <img src="img/map.jpg" alt="США, штата Аризона, город Седона" width="1200" height="593">
       </section>
     </main>
@@ -118,12 +121,12 @@
         <a href="https://twitter.com/hashtag/visitsedona" target="_blank">#visitsedona</a>
       </div>
       <div class="footer-social">
-        <a href="#" target="_blank">Twitter</a>
-        <a href="#" target="_blank">Facebook</a>
-        <a href="#" target="_blank">Youtube</a>
+        <a class="social-tw" href="#" target="_blank">Twitter</a>
+        <a class="social-fb" href="#" target="_blank">Facebook</a>
+        <a class="social-yt" href="#" target="_blank">Youtube</a>
       </div>
       <div class="footer-copyright">
-        Website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
+        Website by <a class="developer" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
       </div>
     </footer>
 

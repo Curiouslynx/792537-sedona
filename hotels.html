@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Отели в Седоне</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <script>if(navigator.userAgent.indexOf("WebKit")!==-1)window.onfocus=function(){location.reload()}</script>
 </head>
 <body>
@@ -58,8 +61,8 @@
               <input id="cost-max" class="cost-max" type="text" name="maxcost" value="3000">
             </div>
             <div class="range">
-              <div class="range-min"></div>
-              <div class="range-max"></div>
+              <div id="range-min" class="range-min"></div>
+              <div id="range-max" class="range-max"></div>
             </div>
             <button class="btn-search" type="submit">Показать</button>
           </fieldset>
@@ -67,17 +70,17 @@
       </section>
       <section class="results-sorting">
         <h2 class="visually-hidden">Сортировка результатов</h2>
-        <span>Найдено:</span>
-        <span>3</span>
-        <span>Сортировка:</span>
+        <span class="results-founded">Найдено:</span>
+        <span class="results-founded-num">3</span>
+        <span class="results-sorting">Сортировка:</span>
         <ul class="sorting-type">
           <li class="sorting-type-current"><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По рейтингу</a></li>
         </ul>
         <ul class="sorting-direction">
-          <li class="sorting-direction-current"><a href="#">По возрастанию</a></li>
-          <li><a href="#">По убыванию</a></li>
+          <li class="sorting-direction-current"><a class="sorting-asc" href="#">По возрастанию</a></li>
+          <li><a class="sorting-desc" href="#">По убыванию</a></li>
         </ul>
       </section>
       <section class="results-hotels">
@@ -87,11 +90,11 @@
             <img src="img/hotel-1.jpg" alt="Amra Resort & Spa" width="135" height="90">
           </div>
           <div class="result-item-description">
-            <h3>Amra Resort & Spa</h3>
-            <p><span>Гостиница</span><span>От 4000 р.</span></p>
+            <a href="#"><h3>Amra Resort & Spa</h3></a>
+            <p><span>Гостиница</span> <span>От 4000 р.</span></p>
             <div class="buttons">
-              <a class="btn" href="#">Подробнее</a>
-              <a class="btn" href="#">Забронировать</a>
+              <a class="btn btn-details" href="#">Подробнее</a>
+              <a class="btn btn-reserve" href="#">Забронировать</a>
             </div>
           </div>
           <div class="result-item-rating">
@@ -104,11 +107,11 @@
             <img src="img/hotel-2.jpg" alt="Desert Quail Inn" width="135" height="90">
           </div>
           <div class="result-item-description">
-            <h3>Desert Quail Inn</h3>
-            <p><span>Мотель</span><span>От 3000 р.</span></p>
+            <a href="#"><h3>Desert Quail Inn</h3></a>
+            <p><span>Мотель</span> <span>От 3000 р.</span></p>
             <div class="buttons">
-              <a class="btn" href="#">Подробнее</a>
-              <a class="btn" href="#">Забронировать</a>
+              <a class="btn btn-details" href="#">Подробнее</a>
+              <a class="btn btn-reserve" href="#">Забронировать</a>
             </div>
           </div>
           <div class="result-item-rating">
@@ -121,11 +124,11 @@
             <img src="img/hotel-3.jpg" alt="Villas at Poco Diablo" width="135" height="90">
           </div>
           <div class="result-item-description">
-            <h3>Villas at Poco Diablo</h3>
-            <p><span>Апартаменты</span><span>От 2000 р.</span></p>
+            <a href="#"><h3>Villas at Poco Diablo</h3></a>
+            <p><span>Апартаменты</span> <span>От 2000 р.</span></p>
             <div class="buttons">
-              <a class="btn" href="#">Подробнее</a>
-              <a class="btn" href="#">Забронировать</a>
+              <a class="btn btn-details" href="#">Подробнее</a>
+              <a class="btn btn-reserve" href="#">Забронировать</a>
             </div>
           </div>
           <div class="result-item-rating">
@@ -141,12 +144,12 @@
         <a href="https://twitter.com/hashtag/visitsedona" target="_blank">#visitsedona</a>
       </div>
       <div class="footer-social">
-        <a href="#" target="_blank">Twitter</a>
-        <a href="#" target="_blank">Facebook</a>
-        <a href="#" target="_blank">Youtube</a>
+        <a class="social-tw" href="#" target="_blank">Twitter</a>
+        <a class="social-fb" href="#" target="_blank">Facebook</a>
+        <a class="social-yt" href="#" target="_blank">Youtube</a>
       </div>
       <div class="footer-copyright">
-        Website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
+        Website by <a class="developer" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
       </div>
     </footer>
 
