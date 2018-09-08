@@ -6,8 +6,6 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <script>if(navigator.userAgent.indexOf("WebKit")!==-1)window.onfocus=function(){location.reload()}</script>
 </head>
 <body>
   <div class="wrapper">
@@ -86,26 +84,28 @@
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p class="hotel-search-header">Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="hotel-search-text">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button type="button" class="btn btn-hotels-popup">Поиск гостиницы в Седоне</button>
         <form class="form-hotels" action="http://echo.htmlacademy.ru/" method="get">
           <p>
-            <label for="arrival">Дата заезда</label>
+            <label for="arrival">Дата заезда:</label>
             <input id="arrival" class="date-arrival" type="text" name="arrival" value="" placeholder="24 АПРЕЛЯ 2017" required>
           </p>
           <p>
-            <label for="departure">Дата выезда</label>
+            <label for="departure">Дата выезда:</label>
             <input id="departure" class="date-daparture" type="text" name="departure" value="" placeholder="4 ИЮЛЯ 2017" required>
           </p>
-          <p>
-            <label for="adults">Взрослые:</label>
-            <button id="btn-adults-less" class="btn-less" type="button">Меньше</button>
-            <input id="adults" class="adults-number" type="text" name="adults" value="2">
-            <button id="btn-adults-more" class="btn-more" type="button">Больше</button>
-            <label for="childrens">Дети:</label>
-            <button id="btn-childrens-less" class="btn-less" type="button">Меньше</button>
-            <input id="childrens" class="childrens-number" type="text" name="childrens" value="0">
-            <button id="btn-childrens-more" class="btn-more" type="button">Больше</button>
+          <p class="container-buttons">
+            <label class="adults-label" for="adults">Взрослые:</label>
+            <span>
+              <button id="btn-adults-less" class="btn-less" type="button">Меньше</button>
+              <input id="adults" class="adults-number" type="text" name="adults" value="2">
+              <button id="btn-adults-more" class="btn-more" type="button">Больше</button>
+              <label class="childrens-label" for="childrens">Дети:</label>
+              <button id="btn-childrens-less" class="btn-less" type="button">Меньше</button>
+              <input id="childrens" class="childrens-number" type="text" name="childrens" value="0">
+              <button id="btn-childrens-more" class="btn-more" type="button">Больше</button>
+            </span>
           </p>
           <button class="btn btn-search-form" type="submit">Найти</button>
         </form>
