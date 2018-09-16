@@ -9,7 +9,6 @@
 </head>
 <body>
   <div class="wrapper">
-
     <header class="page-header">
       <nav class="main-navigation">
         <a class="logo"><img src="img/logo.svg" width="140" height="72" alt="Логотип Седона"></a>
@@ -21,7 +20,6 @@
         </ul>
       </nav>
     </header>
-
     <main class="page-main index-main">
       <h1 class="visually-hidden">Седона - лучший город для туристов в Аризоне</h1>
       <!-- ключевые слова обязательно должны быть в заголовке h1 для SEO -->
@@ -30,15 +28,16 @@
         <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
       </section>
       <section class="advantages">
+        <!-- класс .adv не использовать - блокируется баннерорезками -->
         <h2 class="visually-hidden">Уникальные преимущества Седоны</h2>
         <div class="intro">
-          <p>Седона - небольшой городок в аризоне, <br> заслуживающий большего!</p>
+          <p>Седона &mdash; небольшой городок в аризоне, заслуживающий большего!</p>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <div class="reason-1">
-          <h3>Настоящий <br> городок</h3>
+          <h3>Настоящий городок</h3>
           <span>&mdash; №1 &mdash;</span>
-          <p>Седона &mdash; не аттракцион для туристов, <br> там течёт своя жизнь</p>
+          <p>Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
         <div class="reason-1-photo">
           <img src="img/reason-1-photo.jpg" width="800" height="256" alt="Ресторан Open Range Grill & Tavern">
@@ -46,15 +45,15 @@
         <ul class="features">
           <li class="feature-1">
             <h4>Жильё</h4>
-            <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="feature-2">
             <h4>Еда</h4>
-            <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="feature-3">
             <h4>Сувениры</h4>
-            <p>Не только китайского, но и местного<br> производства!</p>
+            <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
         <div class="reason-2-photo">
@@ -63,41 +62,47 @@
         <div class="reason-2">
           <h3>Там есть<br>мост дьявола</h3>
           <span>&mdash; №2 &mdash;</span>
-          <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
         <div class="reason-3">
-          <h3>Небольшая<br>площадь</h3>
+          <h3>Небольшая площадь</h3>
           <span>&mdash; №3 &mdash;</span>
-          <p>Все достопримечательности<br>находятся очень близко</p>
+          <p>Все достопримечательности находятся очень близко</p>
         </div>
         <div class="reason-4">
-          <h3>Красивая<br>дорога</h3>
+          <h3>Красивая дорога</h3>
           <span>&mdash; №4 &mdash;</span>
-          <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
         <div class="reason-5">
-          <h3>Мало<br>туристов</h3>
+          <h3>Мало туристов</h3>
           <span>&mdash; №5 &mdash;</span>
-          <p>Большинство еден в Гранд Каньон<br>и толпится там</p>
+          <p>Большинство едет в Гранд Каньон и толпится там</p>
         </div>
       </section>
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p class="hotel-search-header">Заинтересовались?</p>
         <p class="hotel-search-text">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button" class="btn btn-hotels-popup">Поиск гостиницы в Седоне</button>
+        <button type="button" id="btn-hotels-popup" class="btn btn-hotels-popup">Поиск гостиницы в Седоне</button>
         <form class="form-hotels" action="http://echo.htmlacademy.ru/" method="get">
-          <p>
+          <p class="arrival-date">
             <label for="arrival">Дата заезда:</label>
-            <input id="arrival" class="date-arrival" type="text" name="arrival" value="" placeholder="24 АПРЕЛЯ 2017" required>
+            <span class="calendar-span">
+              <input id="arrival" class="date-arrival" type="text" name="arrival" value="" placeholder="24 АПРЕЛЯ 2017" required>
+              <button class="btn-calendar" id="btn-arrival" type="button">Календарь</button>
+            </span>
           </p>
-          <p>
+          <p class="departure-date">
             <label for="departure">Дата выезда:</label>
-            <input id="departure" class="date-daparture" type="text" name="departure" value="" placeholder="4 ИЮЛЯ 2017" required>
+            <span class="calendar-span">
+              <input id="departure" class="date-daparture" type="text" name="departure" value="" placeholder="4 ИЮЛЯ 2017" required>
+              <button class="btn-calendar" id="btn-departure" type="button">Календарь</button>
+            </span>
           </p>
           <p class="container-buttons">
             <label class="adults-label" for="adults">Взрослые:</label>
-            <span>
+            <span class="right-container">
               <button id="btn-adults-less" class="btn-less" type="button">Меньше</button>
               <input id="adults" class="adults-number" type="text" name="adults" value="2">
               <button id="btn-adults-more" class="btn-more" type="button">Больше</button>
@@ -115,7 +120,6 @@
         <img src="img/map.jpg" alt="США, штата Аризона, город Седона" width="1200" height="593">
       </section>
     </main>
-
     <footer class="page-footer index-footer">
       <div class="footer-hashtag">
         <a href="https://twitter.com/hashtag/visitsedona" target="_blank">#visitsedona</a>
@@ -129,7 +133,7 @@
         Website by <a class="developer" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
       </div>
     </footer>
-
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

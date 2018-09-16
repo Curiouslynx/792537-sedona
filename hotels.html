@@ -9,10 +9,9 @@
 </head>
 <body>
   <div class="wrapper">
-
     <header class="page-header">
       <nav class="main-navigation">
-        <a class="logo" href="index.html"><img src="img/logo.svg" width="140" height="72" alt="Логотип Седона"></a>
+        <a class="logo" href="index.html"><img src="img/logo.svg" width="140" height="72" alt="Логотип Седона">Логотип Седона</a>
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
@@ -21,7 +20,6 @@
         </ul>
       </nav>
     </header>
-
     <main class="page-main">
       <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
       <section class="filters">
@@ -54,6 +52,7 @@
               <input id="cost-max" class="cost-max" type="text" name="maxcost" value="3000">
             </div>
             <div class="range">
+              <div id="range-selected" class="range-selected"></div>
               <div id="range-min" class="range-min"></div>
               <div id="range-max" class="range-max"></div>
             </div>
@@ -61,11 +60,10 @@
           </fieldset>
         </form>
       </section>
-
       <section class="results-sorting">
         <h2 class="visually-hidden">Сортировка результатов</h2>
         <span class="results-founded">Найдено:</span>
-        <span class="results-founded-num">3</span>
+        <span class="results-founded-num" id="results-founded-num">3</span>
         <span class="results-sorting-header">Сортировка:</span>
         <ul class="sorting-type">
           <li class="sorting-type-current"><a href="#">По цене</a></li>
@@ -73,11 +71,10 @@
           <li><a href="#">По рейтингу</a></li>
         </ul>
         <ul class="sorting-direction">
-          <li class="sorting-direction-current"><a class="sorting-asc" href="#">По возрастанию</a></li>
-          <li><a class="sorting-desc" href="#">По убыванию</a></li>
+          <li><a class="sorting-asc" href="#" title="По возрастанию">По возрастанию</a></li>
+          <li class="sorting-direction-current"><a class="sorting-desc" href="#" title="По убыванию">По убыванию</a></li>
         </ul>
       </section>
-
       <section class="results-hotels">
         <h2 class="visually-hidden">Подходящие результаты</h2>
         <div class="result-item">
@@ -93,7 +90,7 @@
             </div>
           </div>
           <div class="result-item-rating">
-            <div class="rating-img rating-5"></div>
+            <div class="rating-img rating-4"></div>
             <div class="rating-num">Рейтинг: 8,5</div>
           </div>
         </div>
@@ -133,7 +130,6 @@
         </div>
       </section>
     </main>
-
     <footer class="page-footer">
       <div class="footer-hashtag">
         <a href="https://twitter.com/hashtag/visitsedona" target="_blank">#visitsedona</a>
@@ -147,7 +143,7 @@
         Website by <a class="developer" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
       </div>
     </footer>
-
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
